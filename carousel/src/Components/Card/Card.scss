@@ -1,0 +1,45 @@
+
+$base-color: #fd7e14;
+$Noto-font-path: "../public/NotoSerifTamil_SemiCondensed-Light.ttf";
+
+.card {
+    border: 1px solid #fff;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px;
+    height: 800px;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 15px;
+    .card-top {
+      display: flex;
+      h1 {
+        font-family: Noto Serif Tamil;
+        padding-top: 25px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.2em;
+        color: black;
+        margin-left: 15px;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top: 35px;
+        border-radius: 50%;
+      }
+    }
+    .stars {
+      color: $base-color;
+    }
+    .review-content {
+      color: black;
+      display: block;
+      font-size: 20px;
+      font-family: Noto Serif Tamil;
+      font-weight: 500;
+      line-height: 1.8em;
+    }
+  }

@@ -1,0 +1,76 @@
+$base-color: #fd7e14;
+$Noto-font-path: "../public/NotoSerifTamil_SemiCondensed-Light.ttf";
+body {
+  background: #f5f5f5;
+}
+.App {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.slick-slide>div {
+  margin: 0 10px ;
+}
+.slick-list {
+  margin: 0 -20px;
+}
+
+
+.button__bar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 3px;
+
+    button {
+      border: none;
+      background: #575656;
+      color: transparent;
+      cursor: pointer;
+      display: block;
+      height: 12px;
+      width: 12px;
+      border-radius: 7.5px;
+
+      &:hover,:focus
+      {
+        background: $base-color;
+        outline: 0;
+      }
+    }
+  }
+}
+
+.button__bar li.slick-active button {
+  background-color: $base-color;
+}
+.slick-prev {
+  left: -60px !important;
+}
+.slick-next {
+  right: -25px !important;
+}
+.slick-next:before,
+.slick-prev:before {
+  content: "" !important;
+}
+
+.next-slick-arrow,
+.prev-slick-arrow {
+  color: $base-color;
+
+}
+@font-face {
+  src: url("#{$Noto-font-path}");
+  font-family: "Noto Serif Tamil";
+
+}
